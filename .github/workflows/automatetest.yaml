@@ -1,0 +1,17 @@
+name: apple
+
+on:
+  push:
+    branches:
+    - 'main'
+  pull_requests:
+    branches:
+    - 'main'
+
+jobs:
+  apple:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: apple step
+        run: echo "hello world"
